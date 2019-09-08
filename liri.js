@@ -51,7 +51,7 @@ function switchCase() {
       findMovie = parameter;
     };
   
-    var queryUrl = "http://www.omdbapi.com/?t=" + findMovie + "&y=&plot=short&apikey=40e9cece";
+    var queryUrl = "http://www.omdbapi.com/?t=" + findMovie + "&y=&plot=short&apikey=trilogy";
   
     console.log(queryUrl);
     // Code used from OMDB
