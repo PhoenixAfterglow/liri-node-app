@@ -1,23 +1,29 @@
-// Invoke npm dotenv
+// Read / set environment variables dotenv.
 require("dotenv").config();
 // Import keys.js file.
 var keys = require("./keys.js");
-// Access personal key information:s
+// Import FS package for read / write.
+var fs = require("fs");
+// Access personal key information:
 var spotify = new Spotify(keys.spotify);
 
 function switchCase() {
     // Switch case statements
     switch (action) {
-  
-      case 'spotify-this-song':
+      
+    //   case 'concert-this':
+    //     grabBand();
+    //     break;
+
+      case "spotify-this-song":
         grabSong();
         break;
-  
-      case 'movie-this':
+      
+      case "movie-this":
         grabMovie();
         break;
   
-      case 'do-what-it-says':
+      case "do-what-it-says":
         grabReadme();
         break;
   
@@ -27,6 +33,11 @@ function switchCase() {
   
     }
   };
+
+// -------  `node liri.js concert-this <artist/band name here>` -------
+// NOTE:  Need to make Axios / BandsInTown to work.  Same may be true with OMDB and Spotify.
+// `"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"`
+// To add: Venue: Location: Date: (using moment.js) "MM/DD/YYYY"
 
 //  ------- `node liri.js movie-this '<movie name here>'` -------
   function grabMovie() {
@@ -92,3 +103,6 @@ function switchCase() {
       }
     });
   };
+
+// -------  `node liri.js do-what-it-says` -------
+// NOTE: Need to us fs.  Not quite sure what to do here.

@@ -72,7 +72,7 @@ node_modules
 .env
 ``` -->
 
-3. Make a JavaScript file named `keys.js`.
+<!-- 3. Make a JavaScript file named `keys.js`.
 
 * Inside keys.js your file will look like this:
 
@@ -83,9 +83,9 @@ exports.spotify = {
   id: process.env.SPOTIFY_ID,
   secret: process.env.SPOTIFY_SECRET
 };
-```
+``` -->
 
-4. Next, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
+<!-- 4. Next, create a file named `.env`, add the following to it, replacing the values with your API keys (no quotes) once you have them:
 
 ```js
 # Spotify API keys
@@ -93,27 +93,29 @@ exports.spotify = {
 SPOTIFY_ID=your-spotify-id
 SPOTIFY_SECRET=your-spotify-secret
 
-```
+``` -->
 
-* This file will be used by the `dotenv` package to set what are known as environment variables to the global `process.env` object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github &mdash; keeping our API key information private.
+NOTE TO MAYBE CHECK BACK TO ON dotenv / process.env***
 
-* If someone wanted to clone your app from github and run it themselves, they would need to supply their own `.env` file for it to work.
+<!-- * This file will be used by the `dotenv` package to set what are known as environment variables to the global `process.env` object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github &mdash; keeping our API key information private.
 
-5. Make a file called `random.txt`.
+* If someone wanted to clone your app from github and run it themselves, they would need to supply their own `.env` file for it to work. -->
+
+<!-- 5. Make a file called `random.txt`.
 
    * Inside of `random.txt` put the following in with no extra characters or white space:
 
-     * spotify-this-song,"I Want it That Way"
+     * spotify-this-song,"I Want it That Way" -->
 
-6. Make a JavaScript file named `liri.js`.
+<!-- 6. Make a JavaScript file named `liri.js`. -->
 
-7. At the top of the `liri.js` file, add code to read and set any environment variables with the dotenv package:
+<!-- 7. At the top of the `liri.js` file, add code to read and set any environment variables with the dotenv package:
 
 ```js
 require("dotenv").config();
-```
+``` -->
 
-8. Add the code required to import the `keys.js` file and store it in a variable.
+<!-- 8. Add the code required to import the `keys.js` file and store it in a variable.
 
 ```js
   var keys = require("./keys.js");
@@ -123,17 +125,17 @@ require("dotenv").config();
 
   ```js
   var spotify = new Spotify(keys.spotify);
-  ```
+  ``` -->
 
 9. Make it so liri.js can take in one of the following commands:
 
    * `concert-this`
 
-   * `spotify-this-song`
+   <!-- * `spotify-this-song`
 
    * `movie-this`
 
-   * `do-what-it-says`
+   * `do-what-it-says` -->
 
 ### What Each Command Should Do
 
@@ -147,7 +149,7 @@ require("dotenv").config();
 
      * Date of the Event (use moment to format this as "MM/DD/YYYY")
 
-2. `node liri.js spotify-this-song '<song name here>'`
+<!-- 2. `node liri.js spotify-this-song '<song name here>'`
 
    * This will show the following information about the song in your terminal/bash window
 
@@ -159,9 +161,9 @@ require("dotenv").config();
 
      * The album that the song is from
 
-   * If no song is provided then your program will default to "The Sign" by Ace of Base.
+   * If no song is provided then your program will default to "The Sign" by Ace of Base. -->
 
-   * You will utilize the [node-spotify-api](https://www.npmjs.com/package/node-spotify-api) package in order to retrieve song information from the Spotify API.
+   <!-- * You will utilize the [node-spotify-api](https://www.npmjs.com/package/node-spotify-api) package in order to retrieve song information from the Spotify API.
 
    * The Spotify API requires you sign up as a developer to generate the necessary credentials. You can follow these steps in order to generate a **client id** and **client secret**:
 
@@ -171,9 +173,9 @@ require("dotenv").config();
 
    * Step Three: Once logged in, navigate to <https://developer.spotify.com/my-applications/#!/applications/create> to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
 
-   * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api).
+   * Step Four: On the next screen, scroll down to where you see your client id and client secret. Copy these values down somewhere, you'll need them to use the Spotify API and the [node-spotify-api package](https://www.npmjs.com/package/node-spotify-api). -->
 
-3. `node liri.js movie-this '<movie name here>'`
+<!-- 3. `node liri.js movie-this '<movie name here>'`
 
    * This will output the following information to your terminal/bash window:
 
@@ -192,7 +194,7 @@ require("dotenv").config();
 
      * If you haven't watched "Mr. Nobody," then you should: <http://www.imdb.com/title/tt0485947/>
 
-     * It's on Netflix!
+     * It's on Netflix! -->
 
    * You'll use the `axios` package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
 
