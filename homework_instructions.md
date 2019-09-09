@@ -56,11 +56,11 @@ Having an active and healthy commit history on GitHub is important for your futu
 
 * We would like you to have well over 200 commits by graduation, so commit early and often! -->
 
-### Submission on BCS
+<!-- ### Submission on BCS
 
 * Please submit the link to the Github Repository!
 
-### Instructions
+### Instructions -->
 
 <!-- 1. Navigate to the root of your project and run `npm init -y` &mdash; this will initialize a `package.json` file for your project. The `package.json` file is required for installing third party npm packages and saving their version numbers. If you fail to initialize a `package.json` file, it will be troublesome, and at times almost impossible for anyone else to run your code after cloning your project. -->
 
@@ -95,7 +95,7 @@ SPOTIFY_SECRET=your-spotify-secret
 
 ``` -->
 
-NOTE TO MAYBE CHECK BACK TO ON dotenv / process.env***
+<!-- NOTE TO MAYBE CHECK BACK TO ON dotenv / process.env*** -->
 
 <!-- * This file will be used by the `dotenv` package to set what are known as environment variables to the global `process.env` object in node. These are values that are meant to be specific to the computer that node is running on, and since we are gitignoring this file, they won't be pushed to github &mdash; keeping our API key information private.
 
@@ -196,7 +196,7 @@ require("dotenv").config();
 
      * It's on Netflix! -->
 
-   * You'll use the `axios` package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
+   <!-- * You'll use the `axios` package to retrieve data from the OMDB API. Like all of the in-class activities, the OMDB API requires an API key. You may use `trilogy`.
 
 4. `node liri.js do-what-it-says`
 
@@ -204,7 +204,7 @@ require("dotenv").config();
 
      * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
 
-     * Edit the text in random.txt to test out the feature for movie-this and concert-this.
+     * Edit the text in random.txt to test out the feature for movie-this and concert-this. -->
 
 ### BONUS
 
