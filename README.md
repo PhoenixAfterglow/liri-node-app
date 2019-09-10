@@ -1,7 +1,4 @@
-# liri-node-app
-# by Johnny Maravelis
-
-# LIRI Bot
+# LIRI Bot by Johnny Maravelis
 
 Language Interpretation and Recognition Interface (LIRI) is a bot similar to SIRI that presently is capable of pulling up a song, seek song information, as well as preview that song.  Another task LIRI can execute is look up movie information, including the title, release year, IMDB rating, and more.
 
@@ -16,13 +13,13 @@ Open the liri.js app file in Terminal / Bash and run NodeJS.  Here are the follo
 `node liri.js spotify-this-song '<song name here>'`
 `node liri.js do-what-it-says`
 
-Note that "Do what it says" will allow the user to choose what it wants LIRI to do, i.e. "spotify-this-song,'I Want it That Way'"
+Note that "Do what it says" will allow the user to choose what it wants LIRI to do, i.e. "spotify-this-song,'I Want it That Way'" as seen in the random.txt file.
 
 
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+[Deployed link](https://github.com/PhoenixAfterglow/liri-node-app)
 
 ## Built With
 
@@ -37,9 +34,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Author
 
-* **Johnny Maravelis** - *Homework for UNH Bootcamp* - [PhoenixAfterglow](https://github.com/PhoenixAfterglow/liri-node-app)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Johnny Maravelis** - *Homework for UNH Bootcamp* - [PhoenixAfterglow on GitHub](https://github.com/PhoenixAfterglow)
 
 ## License
 
