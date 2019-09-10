@@ -43,7 +43,7 @@ function switchCase(action, search) {
   };
 
 // -------  `node liri.js concert-this <artist/band name here>` -------
-// NOTE:  Need to make Axios / BandsInTown to work.  Same may be true with OMDB and Spotify.
+// NOTE:  Need to make Axios / BandsInTown to work. API key requested but not received.
 // `"https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp"`
 // To add: Venue: Location: Date: (using moment.js) "MM/DD/YYYY"
 
